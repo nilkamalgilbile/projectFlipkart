@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart</title>
+
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+    />
+
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+  </head>
+  <body>
+    <div>
+      <header>
+        <div class="container headerBlock">
+          <i class="fa-solid fa-bars" id="sidebarIcon"></i>
+          <span id="webname">Flipkart</span>
+          <input
+            type="text"
+            id="searchBox"
+            name="search"
+            placeholder="Search for products, brands and more"
+          />
+          <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+          <button id="loginButton">Login</button>
+          <span id="sellerOption">Become a Seller</span>
+          <div class="dropdown">
+            <button class="dropBtn">
+              More<i class="fa-solid fa-angle-down showAngle"></i>
+              <i class="fa-solid fa-angle-up hideAngle"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#"
+                ><i class="fa-solid fa-bell subContentIcon"></i> Notification
+                Preferences</a
+              >
+              <a href="#"
+                ><i class="fa-solid fa-circle-question subContentIcon"></i> 24x7
+                Customer Care</a
+              >
+              <a href="#"
+                ><i class="fa-solid fa-arrow-trend-up subContentIcon"></i>
+                Advertise</a
+              >
+              <a href="#"
+                ><i class="fa-solid fa-download subContentIcon"></i> Download
+                App</a
+              >
+            </div>
+          </div>
+          <span id="cartLogo"
+            ><i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartOption">Cart</span></span
+          >
+        </div>
+      </header>
+
+      <!-- Categories -->
+      <div class="categories">
+        <div class="categoryContainer">
+          <div class="categoryBlock">
+            <div class="categoryImg">
+              <img src="images/categories/grocery.png" alt="grocery" />
+            </div>
+            <div class="categoryName">Grocery</div>
+          </div>
+          <div class="categoryBlock">
+            <div class="categoryImg">
+              <img src="images/categories/mobiles.png" alt="grocery" />
+            </div>
+            <div class="categoryName">Mobiles</div>
+          </div>
+          <div class="categoryBlock">
+            <div class="categoryImg">
+              <img src="images/categories/fashion.png" alt="grocery" />
+            </div>
+            <div class="categoryName">Fashion</div>
+          </div>
+          <div class="categoryBlock">
+            <div class="categoryImg">
+              <img src="images/categories/electronics.png" alt="grocery" />
+            </div>
+            <div class="categoryName">Electronics</div>
+          </div>
+          <div class="categoryBlock">
+            <div class="categoryImg">
+              <img src="images/categories/home.png" alt="grocery" />
+            </div>
+            <div class="categoryName">Home</div>
+          </div>
+          <div class="categoryBlock">
+            <div class="categoryImg">
+              <img src="images/categories/appliances.png" alt="grocery" />
+            </div>
+            <div class="categoryName">Appliances</div>
+          </div>
+          <div class="categoryBlock">
+            <div class="categoryImg">
+              <img src="images/categories/travel.png" alt="grocery" />
+            </div>
+            <div class="categoryName">Travel</div>
+          </div>
+          <div class="categoryBlock">
+            <div class="categoryImg">
+              <img src="images/categories/top-offers.png" alt="grocery" />
+            </div>
+            <div class="categoryName">Top Offers</div>
+          </div>
+          <div class="categoryBlock">
+            <div class="categoryImg">
+              <img src="images/categories/beauty-toys.png" alt="grocery" />
+            </div>
+            <div class="categoryName">Beauty, Toys & More</div>
+          </div>
+          <div class="categoryBlock">
+            <div class="categoryImg">
+              <img src="images/categories/two-wheelers.png" alt="grocery" />
+            </div>
+            <div class="categoryName">Two Wheelers</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- carouselBlock -->
+      <div class="carouselBlock">
+        <div id="slide-img" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#slide-img"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slide-img"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slide-img"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slide-img"
+              data-bs-slide-to="3"
+            ></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/sliding-images/slide-img1.png"
+                alt="Sliding Image"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/sliding-images/slide-img2.png"
+                alt="Sliding Image"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/sliding-images/slide-img3.png"
+                alt="Sliding Image"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/sliding-images/slide-img4.png"
+                class="d-block w-100"
+              />
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#slide-img"
+            data-bs-slide="prev"
+          >
+            <i class="fa-solid fa-angle-left prevIcon"></i>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#slide-img"
+            data-bs-slide="next"
+          >
+            <i class="fa-solid fa-angle-right nextIcon"></i>
+          </button>
+        </div>
+        <!--Image Slider End-->
+      </div>
+
+      <!-- Product Slider 1 -->
+      <div class="electronicsBlock">
+        <div class="containerBlock">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <div class="linkBlock">
+                  <div class="linkInfo">Best of Electronics</div>
+                  <button class="btn btn-primary btnViewAll">view all</button>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <div class="productBlock">
+                  <div class="product-slider">
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/electronics/product1.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Premium PowerBanks</div>
+                        <div class="productOffer">Shop Now</div>
+                        <div class="productBrands">Mi, realme & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/electronics/product2.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Top Mirrorless Cameras</div>
+                        <div class="productOffer">Shop Now!</div>
+                        <div class="productBrands">Canon, Sony & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/electronics/product3.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Printers</div>
+                        <div class="productOffer">From &#x20B9;10190</div>
+                        <div class="productBrands">Brother</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/electronics/product4.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Monitors</div>
+                        <div class="productOffer">From &#x20B9;7949</div>
+                        <div class="productBrands">DELL</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/electronics/product5.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Projectors</div>
+                        <div class="productOffer">From &#x20B9;9999</div>
+                        <div class="productBrands">ZEBRONICS</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/electronics/product6.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Designer Cases & Covers</div>
+                        <div class="productOffer">Just &#x20B9;169</div>
+                        <div class="productBrands">
+                          Check out the new designs
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/electronics/product7.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">ASUS Monitors</div>
+                        <div class="productOffer">From &#x20B9;9990</div>
+                        <div class="productBrands">Top rated</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/electronics/product8.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">
+                          Best of hair straighteners
+                        </div>
+                        <div class="productOffer">From &#x20B9;599</div>
+                        <div class="productBrands">Philips, Havells &more</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Slider 2 -->
+      <div class="electronicsBlock">
+        <div class="containerBlock">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <div class="linkBlock">
+                  <div class="linkInfo">Beauty, Food, Toys & more</div>
+                  <button class="btn btn-primary btnViewAll">view all</button>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <div class="productBlock">
+                  <div class="product-slider">
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/beauty-toys/product1.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Non-Geared Cycles</div>
+                        <div class="productOffer">Up to 40% Off</div>
+                        <div class="productBrands">Hercules, Hero & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/beauty-toys/product2.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Remote Control Toys</div>
+                        <div class="productOffer">Up to 50% Off</div>
+                        <div class="productBrands">Toyden, Funkey & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/beauty-toys/product3.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Footballs</div>
+                        <div class="productOffer">Up to 60% Off</div>
+                        <div class="productBrands">Nivia, Cosco & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/beauty-toys/product4.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Dry Fruits</div>
+                        <div class="productOffer">Up to 75% Off</div>
+                        <div class="productBrands">Happilo, Farmley & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/beauty-toys/product5.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Coffee Powder</div>
+                        <div class="productOffer">Up to 80% Off</div>
+                        <div class="productBrands">
+                          Nescafe, Continental & more
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/beauty-toys/product6.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Dumbbell</div>
+                        <div class="productOffer">Up to 50% Off</div>
+                        <div class="productBrands">PROWL, HRX & KRX</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/beauty-toys/product7.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Musical Keyboards</div>
+                        <div class="productOffer">Up to 70% Off</div>
+                        <div class="productBrands">Beston, Redbox & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/beauty-toys/product8.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Badminton Racquets</div>
+                        <div class="productOffer">Up to 40% Off</div>
+                        <div class="productBrands">Li-ning, Adrenex &more</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product Slider 3 -->
+      <div class="electronicsBlock">
+        <div class="containerBlock">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <div class="linkBlock">
+                  <div class="linkInfo">Shop for a Cool Summer</div>
+                  <button class="btn btn-primary btnViewAll">view all</button>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <div class="productBlock">
+                  <div class="product-slider">
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/cool-summer/product1.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">
+                          Stainless Steel Vacuum Flask
+                        </div>
+                        <div class="productOffer">Shop Now</div>
+                        <div class="productBrands">Luxaza, Milton &more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/cool-summer/product2.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Mosquito Net</div>
+                        <div class="productOffer">Shop Now!</div>
+                        <div class="productBrands">Desire Choice & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/cool-summer/product3.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Mixer Juicer Grinder</div>
+                        <div class="productOffer">Min. 50% Off</div>
+                        <div class="productBrands">
+                          Havells, Cookwell & more
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/cool-summer/product4.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Car Interior Fans</div>
+                        <div class="productOffer">Min. 50% Off</div>
+                        <div class="productBrands">
+                          Otoroys, Monolive & more
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/cool-summer/product5.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Refrigerator</div>
+                        <div class="productOffer">In Focus Now</div>
+                        <div class="productBrands">Samsung, Godrej & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/cool-summer/product6.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Hand Juicers</div>
+                        <div class="productOffer">Min. 50% Off</div>
+                        <div class="productBrands">AXN, Speack & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/cool-summer/product7.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Solar Led lamp</div>
+                        <div class="productOffer">Min. 50% Off</div>
+                        <div class="productBrands">
+                          Innovito, Homehop & more
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/cool-summer/product8.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Ice Cream makers</div>
+                        <div class="productOffer">Min 50% Off</div>
+                        <div class="productBrands">Finner, Skywhale &more</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Slider 4 -->
+      <div class="electronicsBlock">
+        <div class="containerBlock">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <div class="linkBlock">
+                  <div class="linkInfo">Sports, Healthcare & more</div>
+                  <button class="btn btn-primary btnViewAll">view all</button>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <div class="productBlock">
+                  <div class="product-slider">
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/sports-heathcare/product1.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Coffee Powder</div>
+                        <div class="productOffer">Up to 80% Off</div>
+                        <div class="productBrands">
+                          Nescafe, Continental & more
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/sports-heathcare/product2.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Baby Bathing Accessories</div>
+                        <div class="productOffer">Under &#x20B9;599</div>
+                        <div class="productBrands">Baby Bath Tubs & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/sports-heathcare/product3.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Fiction Books</div>
+                        <div class="productOffer">Up to 70% Off</div>
+                        <div class="productBrands">Shop Now!</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/sports-heathcare/product4.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Teddy Bear</div>
+                        <div class="productOffer">Min. 50% Off</div>
+                        <div class="productBrands">Shop Now!</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/sports-heathcare/product5.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Musical Toys</div>
+                        <div class="productOffer">Under &#x20B9;199</div>
+                        <div class="productBrands">Top Selling Toys</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/sports-heathcare/product6.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">String Instruments</div>
+                        <div class="productOffer">Up to 70% Off</div>
+                        <div class="productBrands">
+                          Guitars, Ukuleles & more
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/sports-heathcare/product7.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Honey</div>
+                        <div class="productOffer">Up to 70% Off</div>
+                        <div class="productBrands">Saffola, Dabur & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/sports-heathcare/product8.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Academic Books</div>
+                        <div class="productOffer">Under &#x20B9;299</div>
+                        <div class="productBrands">Explore Now!</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product Slider 5 -->
+      <div class="electronicsBlock">
+        <div class="containerBlock">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <div class="linkBlock">
+                  <div class="linkInfo">Home & Kitchen Essentials</div>
+                  <button class="btn btn-primary btnViewAll">view all</button>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <div class="productBlock">
+                  <div class="product-slider">
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/home-kitchen/product1.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Clocks</div>
+                        <div class="productOffer">Up to 80% Off</div>
+                        <div class="productBrands">Big Discounts</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/home-kitchen/product2.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Wall Decor Items</div>
+                        <div class="productOffer">Up to 80% Off</div>
+                        <div class="productBrands">Big Discounts</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/home-kitchen/product3.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Bulbs</div>
+                        <div class="productOffer">Up to 80% Off</div>
+                        <div class="productBrands">Big Discounts</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/home-kitchen/product4.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Mattress Protectors</div>
+                        <div class="productOffer">From &#x20B9;149</div>
+                        <div class="productBrands">Best Offers</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/home-kitchen/product5.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Spiritual Items</div>
+                        <div class="productOffer">Up to 80% Off</div>
+                        <div class="productBrands">Big Discounts</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/home-kitchen/product6.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Emergency Lights</div>
+                        <div class="productOffer">Up to 80% Off</div>
+                        <div class="productBrands">Big Discounts</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/home-kitchen/product7.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Backpack Sprayer</div>
+                        <div class="productOffer">Up to 50% Off</div>
+                        <div class="productBrands">Big Discounts</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img
+                          src="images/home-kitchen/product8.png"
+                          alt="product"
+                        />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Stickers & Wallpapers</div>
+                        <div class="productOffer">Up to 80% Off</div>
+                        <div class="productBrands">Big Discounts</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product Slider 6 -->
+      <div class="electronicsBlock">
+        <div class="containerBlock">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <div class="linkBlock">
+                  <div class="linkInfo">Fashion Top Deals</div>
+                  <button class="btn btn-primary btnViewAll">view all</button>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <div class="productBlock">
+                  <div class="product-slider">
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img src="images/fashion/product1.png" alt="product" />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Lehenga Cholis & Gowns</div>
+                        <div class="productOffer">Buy 3, Get 10% Off</div>
+                        <div class="productBrands">Buy 2, Get 5% Off</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img src="images/fashion/product2.png" alt="product" />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Fashion Jewellery</div>
+                        <div class="productOffer">From &#x20B9;99</div>
+                        <div class="productBrands">Best Deals!</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img src="images/fashion/product3.png" alt="product" />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Palazzos</div>
+                        <div class="productOffer">From &#x20B9;199</div>
+                        <div class="productBrands">Shop Now!</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img src="images/fashion/product4.png" alt="product" />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Best Selling styles</div>
+                        <div class="productOffer">Min. 40% Off</div>
+                        <div class="productBrands">Woodland, Bata & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img src="images/fashion/product5.png" alt="product" />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Kurtas, Dhotis...</div>
+                        <div class="productOffer">From &#x20B9;499</div>
+                        <div class="productBrands">Shop Now!</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img src="images/fashion/product6.png" alt="product" />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Handbags</div>
+                        <div class="productOffer">40%-70% Off</div>
+                        <div class="productBrands">Lavie, Caprese & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img src="images/fashion/product7.png" alt="product" />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Women's shoes & Sandals</div>
+                        <div class="productOffer">Min. 40% Off</div>
+                        <div class="productBrands">Puma, Bata & more</div>
+                      </div>
+                    </div>
+                    <div class="slide-div">
+                      <div class="productImg">
+                        <img src="images/fashion/product8.png" alt="product" />
+                      </div>
+                      <div class="productDesc">
+                        <div class="productTitle">Kid's Clothing</div>
+                        <div class="productOffer">Min. 60% Off</div>
+                        <div class="productBrands">
+                          US Polo, Provogue & more
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container footerBlock">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="footerAbout">
+                <div class="footerTitle">ABOUT</div>
+                <ul>
+                  <li>Contact Us</li>
+                  <li>About Us</li>
+                  <li>Careers</li>
+                  <li>Corporate Information</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="footerHelp">
+                <div class="footerTitle">HELP</div>
+                <ul>
+                  <li>Payments</li>
+                  <li>Shipping</li>
+                  <li>Cancellation & Returns</li>
+                  <li>FAQ</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+              <div class="footerSocial">
+                <div class="footerTitle">Social Links</div>
+                <div class="socialLinks">
+                  <a href="#" class="socialIcon"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="socialIcon"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" class="socialIcon"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="#" class="socialIcon"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="socialIcon">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="hrLine" />
+          <div class="copyright">&copy; 2023 Nilkamal Gilbile</div>
+        </div>
+      </footer>
+    </div>
+    <!--
+
+
+
+
+  
+-->
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- slick slider script -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(".product-slider").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        prevArrow:
+          '<div class="slick-prev"><i class="fa-solid fa-angle-left"></i></div>',
+        nextArrow:
+          '<div class="slick-next"><i class="fa-solid fa-angle-right"></i></div>',
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+  </body>
+</html>
