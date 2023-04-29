@@ -34,11 +34,11 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div>
+    <div id="main">
       <header>
         <div class="container headerBlock">
           <i class="fa-solid fa-bars" id="sidebarIcon"></i>
-          <span id="webname">Flipkart</span>
+          <span class="webname">Flipkart</span>
           <input
             type="text"
             id="searchBox"
@@ -1027,6 +1027,23 @@
         </div>
       </footer>
     </div>
+
+    <!-- Coupon code -->
+    <div id="coupon">
+      <button class="btn btn-close closebtn" onclick="closeCoupon()"></button>
+      <div class="row">
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 offerDiv">
+          <h1 class="webname">Flipkart</h1>
+          <p id="desc1">Groceries</p>
+          <p id="desc2">Up to 50% OFF</p>
+          <p id="desc3">On Groceries Online</p>
+          <button class="btn" id="couponbtn">SHOP NOW</button>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+          <img src="images/Grocery-coupon.png" alt="grocery" id="couponimg" />
+        </div>
+      </div>
+    </div>
     <!--
 
 
@@ -1049,6 +1066,10 @@
     ></script>
 
     <script type="text/javascript">
+      // coupon
+      window.onload = loadCoupon();
+
+      // slider
       $(".product-slider").slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -1086,6 +1107,7 @@
         ],
       });
 
+      // Dark-Light mode
       var icon = document.getElementById("modeIcon");
       icon.onclick = function () {
         document.body.classList.toggle("dark-theme");

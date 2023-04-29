@@ -18,6 +18,63 @@
   --brand-color: #cccccc;
 }
 
+#main {
+  z-index: 1;
+}
+
+/* Coupon css */
+#coupon {
+  height: 300px;
+  width: 600px;
+  background-image: linear-gradient(to right, red, orange, yellow);
+  z-index: 100;
+  position: absolute;
+  margin-top: -202%;
+  margin-left: 30%;
+  visibility: hidden;
+  padding: 1%;
+}
+.closebtn {
+  float: right;
+}
+#couponimg {
+  width: 100%;
+}
+#desc1 {
+  color: #98e458;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 19px;
+  line-height: 2;
+}
+#desc2 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 1px 1px black;
+  line-height: 1;
+  padding: 1px;
+  background-color: rgb(253, 195, 195);
+}
+#desc3 {
+  color: #ffc107;
+  font-size: 18px;
+  line-height: 1;
+  text-shadow: 1px 1px black;
+}
+#couponbtn {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+#couponbtn:hover {
+  background: none;
+  border: 2px solid yellow;
+  color: white;
+}
+
+/* dark - light mode */
 body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -45,7 +102,7 @@ header {
   font-size: 16px;
   align-self: center;
 }
-#webname {
+.webname {
   font-size: 30px;
   color: var(--primary-color);
   font-style: italic;
@@ -393,11 +450,32 @@ footer {
 */
 
 /*--- Media Query ---*/
+@media screen and (max-width: 2560px) {
+  /*----- Coupon -----*/
+  #coupon {
+    margin-top: -117%;
+    margin-left: 37%;
+  }
+}
 
 @media screen and (max-width: 1824px) {
   /*--- Header ---*/
   #sidebarIcon {
     display: none;
+  }
+
+  /*----- Coupon -----*/
+  #coupon {
+    margin-top: -190%;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  /*----- Coupon -----*/
+  #coupon {
+    margin-top: -202%;
+    margin-left: 30%;
   }
 }
 
@@ -408,6 +486,11 @@ footer {
   }
   #searchIcon {
     padding: 0.8%;
+  }
+  /*----- Coupon -----*/
+  #coupon {
+    margin-top: -322%;
+    margin-left: 21%;
   }
 
   /*--- Categories ---*/
@@ -454,6 +537,12 @@ footer {
     display: none;
   }
 
+  /*----- Coupon -----*/
+  #coupon {
+    margin-top: -433%;
+    margin-left: 11%;
+  }
+
   /*--- Carousel ---*/
   .carousel-inner img {
     height: 165px;
@@ -479,7 +568,7 @@ footer {
   #sidebarIcon {
     margin-right: 4%;
   }
-  #webname {
+  .webname {
     font-size: 25px;
   }
   #searchBox {
@@ -497,6 +586,27 @@ footer {
   }
   #cartIcon {
     margin-left: 4%;
+  }
+
+  /*----- Coupon -----*/
+  #coupon {
+    margin-top: -967%;
+    margin-left: 14%;
+    width: 320px;
+    height: auto;
+    text-align: center;
+  }
+  #desc1 {
+    color: blue;
+  }
+
+  #desc3 {
+    color: black;
+    text-shadow: none;
+    font-weight: bold;
+  }
+  #couponbtn {
+    border: 1px solid red;
   }
 
   /*----  Carousel ---*/
@@ -524,6 +634,13 @@ footer {
   }
 }
 
+@media screen and (max-width: 376px) {
+  /*---- coupon ----*/
+  #coupon {
+    margin-top: -1156%;
+    margin-left: 8%;
+  }
+}
 @media screen and (max-width: 321px) {
   /*----  Carousel ---*/
   .carousel-inner img {
@@ -533,5 +650,10 @@ footer {
   /*--- product slider ---*/
   .slick-next {
     left: 80%;
+  }
+  /*---- coupon ----*/
+  #coupon {
+    margin-top: -1360%;
+    margin-left: 0%;
   }
 }
