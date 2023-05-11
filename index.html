@@ -31,7 +31,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
     />
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </head>
   <body>
     <div id="main">
@@ -77,6 +77,8 @@
             <span id="cartOption">Cart</span></span
           >
           <img src="images/moon.png" alt="moon" id="modeIcon" />
+          <p id="out" class="location"></p>
+          <p id="weather" class="location"></p>
         </div>
       </header>
 
@@ -1065,9 +1067,13 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
 
+    <script src="script.js"></script>
+
     <script type="text/javascript">
       // coupon
       window.onload = loadCoupon();
+      // geolocation
+      window.onload = geolocation();
 
       // slider
       $(".product-slider").slick({

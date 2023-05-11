@@ -133,7 +133,7 @@ header {
   text-align: center;
   width: 110px;
   padding: 0.3%;
-  margin-left: 3%;
+  margin-left: 2%;
   font-weight: bold;
   align-self: center;
 }
@@ -221,6 +221,15 @@ header {
   width: 30px;
   cursor: pointer;
   margin-left: 1%;
+}
+
+.location {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-left: 0.5%;
+  text-align: center;
+  align-self: self-end;
 }
 
 /*--- Categories ---*/
@@ -639,6 +648,9 @@ footer {
   #coupon {
     margin-top: -1156%;
     margin-left: 8%;
+  }
+  .location {
+    visibility: hidden;
   }
 }
 @media screen and (max-width: 321px) {
