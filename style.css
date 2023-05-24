@@ -25,7 +25,7 @@
 /* Coupon css */
 #coupon {
   height: 300px;
-  width: 600px;
+  width: 650px;
   background-image: linear-gradient(to right, red, orange, yellow);
   z-index: 100;
   position: absolute;
@@ -247,26 +247,27 @@ header {
   background-color: var(--primary-color);
   width: auto;
   height: auto;
-  margin: 0.4%;
+  margin: 0.8% 1.5%;
   border-radius: 5px;
   box-sizing: border-box;
 }
 .categoryImg {
   width: 100%;
-  height: 100px;
+  height: auto;
   text-align: center;
 }
 .categoryImg img {
-  width: 90%;
-  height: 90%;
+  width: 60px;
+  height: 60px;
 }
 .categoryName {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  padding-bottom: 1%;
+  padding-bottom: 0;
   padding-top: 0;
   cursor: pointer;
+  line-height: 2;
 }
 
 /*
@@ -289,7 +290,7 @@ header {
   position: relative;
 }
 .carousel-inner {
-  overflow: visible;
+  overflow: hidden;
 }
 
 .carousel-inner img {
@@ -365,7 +366,6 @@ header {
   padding: 30px;
   text-align: center;
   box-sizing: border-box;
-  box-shadow: 10px 10px 8px var(--gray-color);
   margin: 10px;
   cursor: pointer;
 }
@@ -484,7 +484,7 @@ footer {
   /*----- Coupon -----*/
   #coupon {
     margin-top: -202%;
-    margin-left: 30%;
+    margin-left: 27%;
   }
 }
 
@@ -498,8 +498,8 @@ footer {
   }
   /*----- Coupon -----*/
   #coupon {
-    margin-top: -322%;
-    margin-left: 21%;
+    margin-top: -301%;
+    margin-left: 18%;
   }
 
   /*--- Categories ---*/
@@ -518,7 +518,7 @@ footer {
     padding-top: 50%;
   }
   .linkInfo {
-    font-size: 31px;
+    font-size: 27px;
   }
   .slick-next {
     left: 93%;
@@ -548,8 +548,8 @@ footer {
 
   /*----- Coupon -----*/
   #coupon {
-    margin-top: -433%;
-    margin-left: 11%;
+    margin-top: -391%;
+    margin-left: 7%;
   }
 
   /*--- Carousel ---*/
@@ -569,6 +569,9 @@ footer {
   /*--- product slider ---*/
   .slick-next {
     left: 90%;
+  }
+  .linkInfo {
+    font-size: 20px;
   }
 }
 
@@ -599,8 +602,8 @@ footer {
 
   /*----- Coupon -----*/
   #coupon {
-    margin-top: -967%;
-    margin-left: 14%;
+    margin-top: -931%;
+    margin-left: 13%;
     width: 320px;
     height: auto;
     text-align: center;
@@ -646,8 +649,8 @@ footer {
 @media screen and (max-width: 376px) {
   /*---- coupon ----*/
   #coupon {
-    margin-top: -1156%;
-    margin-left: 8%;
+    margin-top: -1039%;
+    margin-left: 7%;
   }
   .location {
     visibility: hidden;
@@ -665,7 +668,8 @@ footer {
   }
   /*---- coupon ----*/
   #coupon {
-    margin-top: -1360%;
+    margin-top: -1214%;
     margin-left: 0%;
+    width: 320px;
   }
 }
